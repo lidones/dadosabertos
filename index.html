@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+  <meta charset="utf-8">
+  <title>Dados abertos</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+  <div id="app">
+    <h1>{{ descricao }}</h1>
+    <h2>Unidade de medida: {{ unidade }}</h2>
+    <area-chart :data="valores"></area-chart>
+  </div>
+  
+  <p>Fonte: <a href="http://dados.gov.br/dataset/desmatamento-na-amazonia-legal">Indicadores sobre Desmatamento na Amazônia Legal</a></p>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://unpkg.com/chart.js@2.7.2/dist/Chart.bundle.js"></script>
+  <script src="https://unpkg.com/vue-chartkick@0.3.1"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
